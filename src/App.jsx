@@ -79,12 +79,16 @@ height:30px;
 font-size: 22px;
 border-radius:50%;
 background-color: #defe47;
+border:1px solid black;
+transition: width 0.2s, height 0.2s;
 &:hover{
 	cursor: pointer;
-	color:white;
+	width:48px;
+	height:48px;
+	background-color: #9cbb00;
+}&:active{
 	background-color:#7700a6; 
-	transform: scale(1.5,1.5);
-	transition: ease-in-out 0.2s;
+	color:white;
 }
 `
 const Labels = styled.label`
