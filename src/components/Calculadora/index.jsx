@@ -12,7 +12,7 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #090909;
+	background-color: #72729e;
 	height: 100vh;
 	width:100vw;
 }
@@ -21,17 +21,17 @@ body{
 const Container = styled.section`
 width:400px;
 height:350px;
-background-color:#E58C8A;
+background-color:#06063F;
 display:flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
 border-radius:10px;
-border:1px solid #000;
+border:1px solid #93F0CC;
 `
 const Tela = styled.div`
 background: rgb(232,232,244);
-background: linear-gradient(0deg, rgba(232,232,244,1) 0%, rgba(46,250,39,1) 54%, rgba(248,254,255,1) 100%);
+background: linear-gradient(0deg, rgba(232,232,244,1) 0%, #70c2a2 54%, rgba(248,254,255,1) 100%);
 border:1px solid black;
 border-radius:10px;
 width:250px;
@@ -53,7 +53,7 @@ height:30px;
 border-radius:5px;
 font-weight:bold;
 font-size:20px;
-background-color:#2efa27;
+background-color:#93F0CC;
 border:1px solid black;
 text-align:center;
 `
@@ -70,7 +70,7 @@ height:50px;
 align-items: center;
 display: flex;
 justify-content: space-evenly;
-background-color:#2efa27; 
+background-color:#93F0CC; 
 border:1px solid black;
 border-radius:5px;
 `
@@ -79,21 +79,22 @@ width:30px;
 height:30px;
 font-size: 22px;
 border-radius:50%;
-background-color: #7EE8FA;
+background-color: #0C0C5D;
+color:#93F0CC;
 border:1px solid black;
 transition: width 0.2s, height 0.2s;
 &:hover{
 	cursor: pointer;
 	width:48px;
 	height:48px;
-	background-color: #EEC0C6;
+	background-color: #414187;
 }&:active{
 	background-color:#090909; 
 	color:white;
 }
 `
 const Labels = styled.label`
-color:#000;
+color:#fff;
 font-size: 20px;
 text-align: center;
 `
@@ -183,7 +184,7 @@ export default function Calculadora() {
 		<>
 			<GlobalStyle />
 			<Container>
-				<h1 style={{ color: "#090909" }}>Calculadora</h1>
+				<h1 style={{ color: "#fff" }}>Calculadora</h1>
 				<ContainerEntrada>
 
 					<Labels>Primeiro Valor
